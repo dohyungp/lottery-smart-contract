@@ -17,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "chain": "ganache",
-    "compile": "truffle compile"
+    "truffle:compile": "truffle compile",
+    "truffle:migrate": "truffle migrate --reset"
   },
   "eslintConfig": {
     "globals": {
