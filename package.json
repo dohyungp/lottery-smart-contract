@@ -18,6 +18,7 @@
     "eject": "react-scripts eject",
     "chain": "ganache",
     "truffle:console": "truffle console",
+    "truffle:test": "truffle test",
     "truffle:compile": "truffle compile",
     "truffle:migrate": "truffle migrate --reset"
   },
