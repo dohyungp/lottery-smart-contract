@@ -13,7 +13,7 @@ contract('Lottery', function([deployer, user1, user2]){
     })
 
 
-    it('getPot은 현재 Pod을 return해줘야 한다', async () => {
+    it.only('getPot은 현재 Pod을 return해줘야 한다', async () => {
         let pot = await lottery.getPot();
         assert.equal(0, pot);
     })
