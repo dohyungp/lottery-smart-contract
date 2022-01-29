@@ -12,13 +12,9 @@ contract('Lottery', function([deployer, user1, user2]){
         lottery = await Lottery.new();
     })
 
-    it('getSomeValue의 값은 5여야 한다.', async () => {
-        let value = await lottery.getSomeValue();
-        assert.equal(5, value);
-    })
 
-    it('owner는 deployer와 같아야 한다', async () => {
-        let owner = await lottery.owner();
-        assert.equal(deployer, owner);
+    it('getPot은 현재 Pod을 return해줘야 한다', async () => {
+        let pot = await lottery.getPot();
+        assert.equal(0, pot);
     })
 })
